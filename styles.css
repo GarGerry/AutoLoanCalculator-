@@ -1,0 +1,58 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f8f9fa;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+    display: none;
+}
+
+.rupiah-input {
+    text-align: right;
+}
+
+/* Accordion */
+.accordion {
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    background: none;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion:after {
+    content: "▼";
+    font-size: 14px;
+}
+
+.active:after {
+    content: "▲";
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
